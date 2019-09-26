@@ -1,3 +1,45 @@
+
+/*===========*/
+@font-face {
+    font-family: montserrat;
+    src: url(../fonts/montserrat-regular.ttf);
+}
+
+@font-face {
+    font-family: montserrat-light;
+    src: url(../fonts/montserrat-light.ttf);
+}
+
+@font-face {
+    font-family: montserrat-extralight;
+    src: url(../fonts/montserrat-extralight.ttf);
+}
+
+@font-face {
+    font-family: raleway;
+    src: url(../fonts/raleway-regular.ttf);
+}
+
+@font-face {
+    font-family: raleway-medium;
+    src: url(../fonts/raleway-medium.ttf);
+}
+
+@font-face {
+    font-family: raleway-semibold;
+    src: url(../fonts/raleway-semibold.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/roboto.ttf);
+}
+
+@font-face {
+    font-family: raleway-bold;
+    src: url(../fonts/raleway-bold.ttf);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -850,7 +892,7 @@ input[type=text]:focus {
     flex-direction: column;
     margin-left: 1.614%;
     padding-top: 6.04%;
-    width: 35.63%;
+    width: 40.63%;
 }
 
 .mobile__content h2 {
@@ -874,7 +916,7 @@ input[type=text]:focus {
 }
 
 .mobile__content ul {
-    padding-left: 14.61%;
+    margin-left: 90px;
 }
 
 .mobile__content li {
@@ -883,8 +925,13 @@ input[type=text]:focus {
     list-style-type: none;
 }
 
+.mobile__content a {
+    text-decoration: none;
+    color: #8c8c8c;
+}
+
 .mobile__content li:before {
-    background-image: url(../svg/list-icon.svg);
+    background-image: url(../img/01_10972.png) ;
     display: inline-block;
     content: " ";
     position: absolute;
@@ -893,6 +940,14 @@ input[type=text]:focus {
     width: 21px;
     height: 21px;
 
+}
+
+.mobile__content li:hover {
+    color: green;
+}
+
+.mobile__content li:active {
+    color: #8c8c8c;
 }
 
 .statistics {
@@ -922,6 +977,14 @@ input[type=text]:focus {
     display: inline-block;
     height: 30px;
     width: 30px;
+}
+
+.statistics__block:hover {
+    opacity: 0.6;
+}
+
+.statistics a {
+    text-decoration: none;
 }
 
 .statistics__icon {
@@ -1220,9 +1283,27 @@ input[type=text]:focus {
     text-decoration: none;
 }
 
+.footer-content__user:hover {
+    color: #959595;
+    text-decoration: none;
+}
+
+.footer-content__user:active {
+    color: #00bff3;
+    text-decoration: none;
+}
+
 .footer-content__link {
     color: #959595;
     text-decoration: none;
+}
+
+.footer-content__link:hover {
+    color: #959595;
+}
+
+.footer-content__link:active {
+    color: #00bff3;
 }
 
 .footer-content hr {
@@ -1263,6 +1344,13 @@ input[type=text]:focus {
 .widget-wrapper img:hover {
     transform: rotate(360deg);
     border-radius: 50%;
+    opacity: 0.5;
+}
+
+.widget-wrapper img:active {
+    transform: rotate(360deg);
+    border-radius: 50%;
+    opacity: 1;
 }
 
 .footer-bottom {
